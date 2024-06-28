@@ -32,7 +32,7 @@ flowchart LR
 
 **Language Concept Extraction Process:** *(performed by the [[LCE Tool]])*
 ![[lce-process.drawio.png]]
-The [[Extractor API]] orchestrates the extraction process to obtain [[Project|project]] objects which are then exported in JSON format. The orchestration process encompasses the following steps:
+The [[Extractor API]] orchestrates the extraction process to obtain [[Project|project]] objects which are then exported to a JSON file. The orchestration process encompasses the following steps:
 1. [[Native Tools and APIs|native tools and APIs]] are used to get an enriched, structured view on the source code in the form of ASTs and other data structures
 2. [[Traversers|traversers]] traverse the ASTs of all source files and execute different [[Processors|processors]] to extract information on a file-by-file basis
 	- the decision whether a [[Processors|processor]] is executed is defined in its [[Execution Conditions|execution condition]]
@@ -43,7 +43,7 @@ The [[Extractor API]] orchestrates the extraction process to obtain [[Project|pr
 	-  all extracted [[Language Concept|language concepts]] are bundled into individual [[Project|project]] objects
 3. the [[Project|project]] objects with the extracted [[Language Concept|language concepts]] are re-processed by [[Post Processors|post processors]] on a project-wide/cross-project basis, allowing for advanced resolution algorithms
 	- [[Post Processors|post processors]] have no access to the AST data, they only work on [[Language Concept|language concept]] objects (which may, however, contain attached metadata by [[Metadata Assignment Rules|metadata assignment rules]])
-4. the processed [[Project|project]] objects are then exported in a JSON format
+4. the processed [[Project|project]] objects are then exported to a JSON file
 ## Concepts & Mechanisms
 - [[Extractor API]] and [[Project|Projects]]
 - [[Native Tools and APIs]]

@@ -7,7 +7,7 @@ aliases:
 
 **Execution Steps:**
 1. push a new empty map on the [[Local Contexts|local context stack]]
-2. find matching [[Processors|processors]] for the current [[Processing Context|processing context]] by evaluating their [[Execution Conditions|execution conditions]]
+2. search the [[Feature Collections|feature collection]] for matching [[Processors|processors]] for the current [[Processing Context|processing context]] by evaluating their [[Execution Conditions|execution conditions]]
 3. for all selected [[Processors|processors]]: run the pre-processing step
 4. recursively start the traversal process for all AST child nodes of the current node and retrieve any extracted [[Language Concept|language concepts]] in the form of a [[Concept Map|concept map]]
 5. for all selected [[Processors|processors]]: run the post-processing step and collect newly extracted [[Language Concept|concepts]] 
