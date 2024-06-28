@@ -6,7 +6,7 @@ aliases:
 
 # jQAssistant Language Concept Extractor Architecture
 
-The Language Concept Extractor (LCE) architecture for [jQAssistant](https://jqassistant.org) provides a generic framework for building native [[LCE Tool|tools]] to scan source code of arbitrary programming languages and extract relevant [[Language Concept|language concepts]] from it. It then consolidates the extracted information into an easy-to-process JSON format for a [[jQAssistant Plugin|jQA plugin]].
+The Language Concept Extractor (LCE) architecture for [jQAssistant](https://jqassistant.org) provides a generic framework for building native [[LCE Tool|tools]] to scan the source code of arbitrary programming languages and extract relevant [[Language Concept|language concepts]] from it. It then consolidates the extracted information into an easy-to-process JSON format for a [[jQAssistant Plugin|jQA plugin]].
 
 ## Key Goals
 - **extensibility**: easily implement the detection and extraction of new language concepts
