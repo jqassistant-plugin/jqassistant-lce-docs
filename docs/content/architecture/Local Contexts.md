@@ -19,7 +19,7 @@ classDiagram
 		+popContexts() Map
 	}
 ```
-- the maps should use strings or numbers as keys, that are defined as constants in the [[Processors|processor]] class that registers a given context
+- the maps should use strings or numbers as keys, that are defined as constants in the [[Processors|processor]] class that registers a given context, or at a central location within the code base
 - map values can be of any type
 - the `contexts` field may also have a private visibility to limit the complexity of local context usage
 - the methods proposed above serve as guideline for various utility functions that ease the interaction with the local contexts stacks
